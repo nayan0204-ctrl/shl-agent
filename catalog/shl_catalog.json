@@ -1,0 +1,320 @@
+[
+  {
+    "name": "Java 8 (New)",
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
+    "description": "Assessment for Java programming skills and object-oriented development.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Core Java Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates core Java coding and programming concepts.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Python Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Assessment for Python programming and scripting skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "SQL Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates SQL querying and database management skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "JavaScript Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures JavaScript programming and frontend development ability.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "React Developer Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Assessment for React.js frontend development skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Node.js Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates backend Node.js development capability.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "DevOps Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures CI/CD, deployment, and DevOps engineering skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Cloud Computing Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates AWS, Azure, and cloud infrastructure skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Data Science Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures machine learning and data science knowledge.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "AI Engineer Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Assessment for artificial intelligence and deep learning roles.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Cybersecurity Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates cybersecurity analysis and secure systems knowledge.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Software Testing Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures QA automation and software testing skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "C++ Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Assessment for C++ programming and systems development.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "C Programming Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates C programming fundamentals and low-level coding.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "General Ability Screen",
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/general-ability-screen/",
+    "description": "Measures cognitive and reasoning ability.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Numerical Reasoning Test",
+    "url": "https://www.shl.com/",
+    "description": "Measures numerical analysis and quantitative reasoning.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Verbal Reasoning Test",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates verbal comprehension and logical reasoning.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Logical Reasoning Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures abstract and logical problem-solving ability.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Inductive Reasoning Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates pattern recognition and inductive reasoning.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Deductive Reasoning Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures deductive logic and analytical thinking.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Critical Thinking Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates critical thinking and decision-making capability.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Problem Solving Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures analytical problem-solving skills.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Attention to Detail Test",
+    "url": "https://www.shl.com/",
+    "description": "Assesses accuracy and detail-oriented working style.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "Spatial Reasoning Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures spatial visualization and reasoning ability.",
+    "test_type": "Cognitive"
+  },
+  {
+    "name": "OPQ32r",
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/opq32r/",
+    "description": "Occupational personality questionnaire measuring workplace behavior.",
+    "test_type": "Personality"
+  },
+  {
+    "name": "Personality and Motivation Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates workplace personality traits and motivation.",
+    "test_type": "Personality"
+  },
+  {
+    "name": "Behavioral Competency Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures workplace behavioral competencies.",
+    "test_type": "Personality"
+  },
+  {
+    "name": "Leadership Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures leadership potential and people management ability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Communication Skills Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates verbal and written communication effectiveness.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Teamwork Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures collaboration and teamwork capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Customer Service Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates customer handling and support capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Sales Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures sales aptitude and persuasion capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Project Management Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates project planning and management skills.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Stakeholder Management Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures stakeholder communication and relationship management.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Conflict Resolution Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates workplace conflict handling capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Emotional Intelligence Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures emotional awareness and interpersonal effectiveness.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Adaptability Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates adaptability and flexibility in changing environments.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Time Management Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures prioritization and time management skills.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Graduate Aptitude Test",
+    "url": "https://www.shl.com/",
+    "description": "Assessment for graduate recruitment and entry-level hiring.",
+    "test_type": "Aptitude"
+  },
+  {
+    "name": "Internship Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates foundational skills for internship hiring.",
+    "test_type": "Aptitude"
+  },
+  {
+    "name": "Managerial Aptitude Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures managerial decision-making and leadership aptitude.",
+    "test_type": "Aptitude"
+  },
+  {
+    "name": "Executive Leadership Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates executive leadership and strategic thinking.",
+    "test_type": "Leadership"
+  },
+  {
+    "name": "Strategic Thinking Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures long-term strategic planning capability.",
+    "test_type": "Leadership"
+  },
+  {
+    "name": "Decision Making Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates workplace decision-making effectiveness.",
+    "test_type": "Leadership"
+  },
+  {
+    "name": "Business Analyst Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures business analysis and requirement gathering skills.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Data Analyst Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates data analysis and reporting capability.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Financial Analyst Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures financial analysis and accounting reasoning.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "HR Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates HR management and recruitment capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Recruitment Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures interviewing and recruitment skills.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Marketing Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates marketing and brand strategy capability.",
+    "test_type": "Behavioral"
+  },
+  {
+    "name": "Digital Marketing Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Measures SEO, SEM, and digital marketing knowledge.",
+    "test_type": "Technical"
+  },
+  {
+    "name": "Content Writing Assessment",
+    "url": "https://www.shl.com/",
+    "description": "Evaluates written communication and content creation skills.",
+    "test_type": "Behavioral"
+  }
+]

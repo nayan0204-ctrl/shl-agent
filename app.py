@@ -1,22 +1,23 @@
 from fastapi import FastAPI
-
-from models.schemas import ChatRequest
-from services.chat_service import chat
+import uvicorn
+import os
 
 app = FastAPI()
 
-@app.get("/health")
-def health():
+# Home route for Railway health check
+@app.get("/")
+def home():
+    return {"message": "API running successfully"}
 
-    return {
-        "status": "ok"
-    }
+# Example API route
+@app.get("/test")
+def test():
+    return {"status": "working"}
 
-@app.post("/chat")
-def chat_endpoint(request: ChatRequest):
-
-    response = chat(
-        [m.model_dump() for m in request.messages]
+# Run server
+if __name__ == "__main__":
+    uvicorn.run(
+        app,
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 10000))
     )
-
-    return response

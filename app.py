@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from typing import List
 import uvicorn
@@ -55,24 +56,138 @@ assessments = [
 ]
 
 # -----------------------------
-# HOME
+# FRONTEND PAGE
 # -----------------------------
 
-@app.get("/")
-def home():
-    return {
-        "message": "SHL Agent API running successfully"
-    }
+@app.get("/", response_class=HTMLResponse)
+def frontend():
 
-# -----------------------------
-# HEALTH
-# -----------------------------
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>SHL Chatbot</title>
 
-@app.get("/health")
-def health():
-    return {
-        "status": "ok"
-    }
+        <style>
+            body{
+                font-family: Arial;
+                background:#f4f4f4;
+                padding:40px;
+            }
+
+            .container{
+                background:white;
+                padding:30px;
+                border-radius:10px;
+                max-width:700px;
+                margin:auto;
+            }
+
+            input{
+                width:100%;
+                padding:12px;
+                margin-top:10px;
+            }
+
+            button{
+                margin-top:10px;
+                padding:12px 20px;
+                background:#4CAF50;
+                color:white;
+                border:none;
+                cursor:pointer;
+            }
+
+            .response{
+                margin-top:20px;
+                padding:15px;
+                background:#eeeeee;
+                border-radius:8px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>🤖 SHL Assessment Recommendation Bot</h1>
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Enter hiring requirements"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+            <div class="response" id="response"></div>
+
+        </div>
+
+        <script>
+
+            async function sendMessage(){
+
+                const input =
+                    document.getElementById("userInput").value;
+
+                const response =
+                    await fetch("/chat", {
+
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":"application/json"
+                    },
+
+                    body: JSON.stringify({
+                        messages:[
+                            {
+                                role:"user",
+                                content:input
+                            }
+                        ]
+                    })
+                });
+
+                const data = await response.json();
+
+                let html =
+                    "<h3>" + data.reply + "</h3>";
+
+                if(data.recommendations){
+
+                    html += "<ul>";
+
+                    data.recommendations.forEach(rec => {
+
+                        html += `
+                            <li>
+                                <b>${rec.name}</b>
+                                (${rec.test_type})
+                                <br>
+                                <a href="${rec.url}" target="_blank">
+                                    View Assessment
+                                </a>
+                            </li>
+                            <br>
+                        `;
+                    });
+
+                    html += "</ul>";
+                }
+
+                document.getElementById("response").innerHTML = html;
+            }
+
+        </script>
+
+    </body>
+    </html>
+    """
 
 # -----------------------------
 # CHAT ENDPOINT
@@ -91,7 +206,7 @@ def chat(req: ChatRequest):
             "end_of_conversation": False
         }
 
-    # Comparison
+    # Compare
     if "compare" in latest_message:
         return {
             "reply": "OPQ32r measures personality traits while General Ability Screen evaluates cognitive ability.",
@@ -134,7 +249,7 @@ def chat(req: ChatRequest):
         recommendations = assessments[:5]
 
     return {
-        "reply": "Here are recommended SHL assessments for your hiring needs.",
+        "reply": "Here are recommended SHL assessments.",
         "recommendations": recommendations,
         "end_of_conversation": True
     }
@@ -144,8 +259,9 @@ def chat(req: ChatRequest):
 # -----------------------------
 
 if __name__ == "__main__":
+
     uvicorn.run(
         app,
         host="0.0.0.0",
-        port=int(os.environ.get("PORT", 10000))
+        port=int(os.environ.get("PORT", 8000))
     )
